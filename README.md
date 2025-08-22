@@ -32,7 +32,7 @@ sudo apt install nmap
 Setting Up the Test Environment
 
 Enable the firewall on the target server to close all ports:
-``` 
+``` bash
 sudo ufw enable
 ```
 
@@ -45,7 +45,7 @@ Confirm that no ports are open. This provides a known starting point for scans.
 Basic Nmap Scan
 
 To scan all default 1,000 ports:
-```
+```bash
 nmap <target-ip>
 ```
 
