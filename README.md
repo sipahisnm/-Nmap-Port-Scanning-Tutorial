@@ -34,8 +34,9 @@ Setting Up the Test Environment
 Enable the firewall on the target server to close all ports:
 ``` 
 sudo ufw enable
+```
 
----
+
 
 Warning: This may disrupt SSH connections.
 
@@ -44,8 +45,9 @@ Confirm that no ports are open. This provides a known starting point for scans.
 Basic Nmap Scan
 
 To scan all default 1,000 ports:
-
+```
 nmap <target-ip>
+```
 
 
 This may take some time as Nmap checks each port.
@@ -57,9 +59,10 @@ If all ports are filtered, the firewall is blocking them.
 Scanning Specific Ports
 
 To scan a specific port or range:
+```
 
 nmap -p 1-100 <target-ip>
-
+```
 
 Quicker than scanning all ports.
 
