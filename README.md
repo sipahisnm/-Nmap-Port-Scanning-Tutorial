@@ -59,7 +59,7 @@ If all ports are filtered, the firewall is blocking them.
 Scanning Specific Ports
 
 To scan a specific port or range:
-```
+```bash
 
 nmap -p 1-100 <target-ip>
 ```
@@ -71,44 +71,44 @@ Example: Port 17 may appear closed if no application is listening.
 Testing Open Ports with Applications
 
 Simulate an application listening on a port using Netcat:
-
+```bash
 nc -l 17
+```
 
 
 Scan that specific port:
-
+```bash
 nmap -p 17 <target-ip>
-
+```
 
 The port should now show as open.
 
 Install a real service (e.g., Nginx):
-
+```bash
 sudo apt install nginx
-
+```
 
 Nginx typically opens port 80 (HTTP) and 443 (HTTPS).
 
 Fast Scans
 
 Use the -F flag for a faster scan of common ports:
-
+```bash
 nmap -F <target-ip>
-
+```
 
 Scans fewer ports but completes quickly.
 
 Make sure the firewall is disabled if ports appear filtered:
-
+```bash
 sudo ufw disable
-
+```
 Scanning Domains
 
 You can scan domain names instead of IP addresses:
-
+```bash
 nmap <domain-name>
-
-
+```
 Example: Google usually has ports 80 (HTTP) and 443 (HTTPS) open.
 
 Conclusion
