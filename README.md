@@ -26,6 +26,7 @@ If Nmap is not installed, you can install it using:
 
 ```bash
 sudo apt install nmap
+```
 
 
 Setting Up the Test Environment
