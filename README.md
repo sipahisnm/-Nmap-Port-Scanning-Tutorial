@@ -31,9 +31,10 @@ sudo apt install nmap
 Setting Up the Test Environment
 
 Enable the firewall on the target server to close all ports:
-
+``` 
 sudo ufw enable
 
+---
 
 Warning: This may disrupt SSH connections.
 
